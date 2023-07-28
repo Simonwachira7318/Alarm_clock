@@ -1,0 +1,144 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+body{
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #4A98F7;
+}
+.wrapper{
+    width: 400px;
+    padding: 30px 30px 38px;
+    background: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.wrapper img{
+    max-width: 103px;
+}
+.wrapper h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.wrapper .content{
+    width: 100%;
+    justify-content: space-between;
+}
+.content .disable{
+    cursor: no-drop;
+}
+.content .column{
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    width: calc(100% /3 - 5px);
+}
+.content.disable .column{
+    opacity: 0.6;
+    pointer-events: none;
+} */
+
+
+body {
+    /* background-color: #1a1a1a; */
+    background-image: url(./media/darkchat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 13%;
+    /* padding-top: 50px; */
+}
+
+.wrapper {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgb(242, 255, 0);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+select {
+    background-color: #324953;
+    border: none;
+    color: #ffe100;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    appearance: none;
+    box-shadow: 0 2px 4px rgb(0, 72, 255);
+}
+select:hover{
+    box-shadow: 0 0 5px #ffe100;  
+}
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffe100;
+}
+
+button {
+    background-color: #d7c115;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-shadow: 0 4px 8px rgb(0, 38, 255);
+}
+
+button:hover {
+    background-color: #d0d70b;
+    box-shadow: 0 4px 8px rgb(254, 254, 254);
+}
+
+.disable {
+    opacity: 0.5;
+}
+
